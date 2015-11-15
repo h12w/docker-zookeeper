@@ -23,5 +23,5 @@ RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 WORKDIR /opt/zookeeper
 VOLUME ["/opt/zookeeper/conf", "/opt/zookeeper/data"]
 
-EXPOSE 2181 2888 3888
+EXPOSE 2181
 ENTRYPOINT ["/usr/bin/start-zk.sh"]
