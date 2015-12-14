@@ -5,7 +5,7 @@ RUN apt-get update && \
     apt-get install --yes curl \
                           jq
 
-ENV VER 3.4.6
+ENV VER 3.4.7
 ENV ZK_HOME /opt/zookeeper
 
 RUN mirror=$(curl --stderr /dev/null https://www.apache.org/dyn/closer.cgi\?as_json\=1 | jq -r '.preferred') && \
